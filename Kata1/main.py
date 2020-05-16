@@ -1,12 +1,14 @@
-password = "contraseña"
+edad = input("Introduce tú edad: ")
+edad = int (edad)
 
-password_del_usuario = input ("Introduzca la contraseña: ")
-password_del_usuario = password_del_usuario.lower()
-
-if password == password_del_usuario:
-    print("La contraseña es correcta")
+if edad < 4:
+    print("El precio de la entrada es 0€")
+elif  4 <=  edad <= 18:
+    print ("El precio de la entrada es 5€")
 else:
-    print ("Contraseña erronea")
+    print ("El precio de la entrada es 10€")
+
+
     
 
 
