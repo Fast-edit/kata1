@@ -1,13 +1,13 @@
-precio = 3.49
-descuento  = 1 - 0.6
-precio_con_descuento = precio * descuento
+password = "contraseña"
 
-numero_de_barras = input("Introduce el número de barras vendidas: ")
-numero_de_barras = int (numero_de_barras)
+password_del_usuario = input ("Introduzca la contraseña: ")
+password_del_usuario = password_del_usuario.lower()
 
-print("Precio habitual " + str (precio))
-print ("Descuento "+ str (precio_con_descuento))
-print ("Coste final: " + str (numero_de_barras * precio_con_descuento))
+if password == password_del_usuario:
+    print("La contraseña es correcta")
+else:
+    print ("Contraseña erronea")
+    
 
 
 
